@@ -60,7 +60,7 @@ public class TC_SignUp_001 extends TestBase {
 		
 		actions.click(loginandSignupPage.getDateOfBirth()).build().perform();
 		sleep();	
-		driver.manage().window().fullscreen();
+		//driver.manage().window().fullscreen();
 		actions.click(loginandSignupPage.getClickOnYear()).build().perform();
 		sleep();
 		actions.click(loginandSignupPage.getSelectYear()).build().perform();
@@ -80,7 +80,7 @@ public class TC_SignUp_001 extends TestBase {
 			robot.keyPress(KeyEvent.VK_TAB);
 			robot.keyPress(KeyEvent.VK_ENTER);
 		} catch (AWTException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
 		

@@ -7,20 +7,13 @@
   </listeners>
   <test thread-count="5" name="TeamAutomationTest(failed)">
     <classes>
-      <class name="com.qa.testscript.TC_FlightStatus_003_01">
+      <class name="com.qa.testscript.TC_GiftCard_008">
         <methods>
+          <include name="ClickLinkOfGC"/>
           <include name="tearDown"/>
-          <include name="flight_Status"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.qa.testscript.TC_FlightStatus_003_01 -->
-      <class name="com.qa.testscript.TC_FlightSearchAndFlightStatus_003">
-        <methods>
-          <include name="tearDown"/>
-          <include name="FlightSearch"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.qa.testscript.TC_FlightSearchAndFlightStatus_003 -->
+      </class> <!-- com.qa.testscript.TC_GiftCard_008 -->
     </classes>
   </test> <!-- TeamAutomationTest(failed) -->
 </suite> <!-- Failed suite [SpiceJetAutomation] -->

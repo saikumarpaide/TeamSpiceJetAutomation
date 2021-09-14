@@ -9,17 +9,17 @@
 	<test thread-count="5" name="TeamAutomationTest">
 
 		<classes>
-			<class name="com.qa.testscript.TestBase" />
+		 	<class name="com.qa.testscript.TestBase" />
 			<class name="com.qa.testscript.TC_SignUp_001" />
 			<class name="com.qa.testscript.TC_Login_002" />
-			<class
-				name="com.qa.testscript.TC_FlightSearchAndFlightStatus_003" />
+			<class name="com.qa.testscript.TC_FlightSearchAndFlightStatus_003" />
 			<class name="com.qa.testscript.TC_FlightStatus_003_01" />
 			<class name="com.qa.testscript.TC_HotelPackage_004" />
 			<class name="com.qa.testscript.TC_StudentDiscount__005" />
 			<class name="com.qa.testscript.TC_ConnectWithUs_006" />
 			<class name="com.qa.testscript.TC_FooterLinks_007" />
-		 	<class name="com.qa.testscript.TC_GiftCard_008" />
+			<class name="com.qa.testscript.TC_GiftCard_008" />
+			
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- SpiceJetAutomation -->

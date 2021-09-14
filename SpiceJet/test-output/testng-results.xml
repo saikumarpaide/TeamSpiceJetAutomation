@@ -1,13 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="8" failed="2" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[No of Tabs are ==>5]]>
+    </line>
+    <line>
+      <![CDATA[SpiceJet - Flight Booking for Domestic and International, Cheap Air Tickets]]>
+    </line>
+    <line>
+      <![CDATA[Site Map | SpiceJet Airlines]]>
+    </line>
+    <line>
+      <![CDATA[GST Information]]>
+    </line>
+    <line>
+      <![CDATA[Low Cost Air Travel, International Flight Tickets from India, Cheap Airline Tickets India | SpiceJet Airlines]]>
+    </line>
+    <line>
+      <![CDATA[Privacy Policy | SpiceJet Airlines]]>
+    </line>
   </reporter-output>
-  <suite started-at="2021-09-13T09:19:24 IST" name="SpiceJetAutomation" finished-at="2021-09-13T09:25:05 IST" duration-ms="340780">
+  <suite started-at="2021-09-14T18:05:40 IST" name="SpiceJetAutomation" finished-at="2021-09-14T18:07:57 IST" duration-ms="137045">
     <groups>
     </groups>
-    <test started-at="2021-09-13T09:19:24 IST" name="TeamAutomationTest" finished-at="2021-09-13T09:25:05 IST" duration-ms="340780">
+    <test started-at="2021-09-14T18:05:40 IST" name="TeamAutomationTest" finished-at="2021-09-14T18:07:57 IST" duration-ms="137045">
       <class name="com.qa.testscript.TC_FooterLinks_007">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.testscript.TC_FooterLinks_007@10e31a9a]" started-at="2021-09-13T09:23:28 IST" name="setUp" finished-at="2021-09-13T09:23:35 IST" duration-ms="7424" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.testscript.TC_FooterLinks_007@272113c4]" started-at="2021-09-14T18:05:41 IST" name="setUp" finished-at="2021-09-14T18:06:37 IST" duration-ms="56482" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,328 +36,33 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="checkFooterLinks()[pri:0, instance:com.qa.testscript.TC_FooterLinks_007@10e31a9a]" started-at="2021-09-13T09:23:35 IST" name="checkFooterLinks" finished-at="2021-09-13T09:24:14 IST" duration-ms="39424" status="PASS">
+        <test-method signature="checkFooterLinks()[pri:0, instance:com.qa.testscript.TC_FooterLinks_007@272113c4]" started-at="2021-09-14T18:06:37 IST" name="checkFooterLinks" finished-at="2021-09-14T18:07:55 IST" duration-ms="77169" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[No of Tabs are ==>5]]>
+            </line>
+            <line>
+              <![CDATA[SpiceJet - Flight Booking for Domestic and International, Cheap Air Tickets]]>
+            </line>
+            <line>
+              <![CDATA[Site Map | SpiceJet Airlines]]>
+            </line>
+            <line>
+              <![CDATA[GST Information]]>
+            </line>
+            <line>
+              <![CDATA[Low Cost Air Travel, International Flight Tickets from India, Cheap Airline Tickets India | SpiceJet Airlines]]>
+            </line>
+            <line>
+              <![CDATA[Privacy Policy | SpiceJet Airlines]]>
+            </line>
           </reporter-output>
         </test-method> <!-- checkFooterLinks -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testscript.TC_FooterLinks_007@10e31a9a]" started-at="2021-09-13T09:24:14 IST" name="tearDown" finished-at="2021-09-13T09:24:15 IST" duration-ms="259" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testscript.TC_FooterLinks_007@272113c4]" started-at="2021-09-14T18:07:55 IST" name="tearDown" finished-at="2021-09-14T18:07:57 IST" duration-ms="2026" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.testscript.TC_FooterLinks_007 -->
-      <class name="com.qa.testscript.TC_Login_002">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.testscript.TC_Login_002@49ec71f8]" started-at="2021-09-13T09:20:14 IST" name="setUp" finished-at="2021-09-13T09:20:22 IST" duration-ms="8304" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://beta.spicejet.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="Loginform()[pri:0, instance:com.qa.testscript.TC_Login_002@49ec71f8]" started-at="2021-09-13T09:20:22 IST" name="Loginform" finished-at="2021-09-13T09:20:38 IST" duration-ms="15873" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Loginform -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testscript.TC_Login_002@49ec71f8]" started-at="2021-09-13T09:20:38 IST" name="tearDown" finished-at="2021-09-13T09:20:39 IST" duration-ms="417" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.testscript.TC_Login_002 -->
-      <class name="com.qa.testscript.TC_GiftCard_008">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.testscript.TC_GiftCard_008@131774fe]" started-at="2021-09-13T09:24:15 IST" name="setUp" finished-at="2021-09-13T09:24:22 IST" duration-ms="7576" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://beta.spicejet.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="ClickLinkOfGC()[pri:1, instance:com.qa.testscript.TC_GiftCard_008@131774fe]" started-at="2021-09-13T09:24:22 IST" name="ClickLinkOfGC" finished-at="2021-09-13T09:25:05 IST" duration-ms="42528" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ClickLinkOfGC -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testscript.TC_GiftCard_008@131774fe]" started-at="2021-09-13T09:25:05 IST" name="tearDown" finished-at="2021-09-13T09:25:05 IST" duration-ms="223" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.testscript.TC_GiftCard_008 -->
-      <class name="com.qa.testscript.TC_ConnectWithUs_006">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.testscript.TC_ConnectWithUs_006@3febb011]" started-at="2021-09-13T09:23:11 IST" name="setUp" finished-at="2021-09-13T09:23:18 IST" duration-ms="7223" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://beta.spicejet.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="ConnectWithUs()[pri:0, instance:com.qa.testscript.TC_ConnectWithUs_006@3febb011]" started-at="2021-09-13T09:23:18 IST" name="ConnectWithUs" finished-at="2021-09-13T09:23:27 IST" duration-ms="9536" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ConnectWithUs -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testscript.TC_ConnectWithUs_006@3febb011]" started-at="2021-09-13T09:23:27 IST" name="tearDown" finished-at="2021-09-13T09:23:28 IST" duration-ms="238" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.testscript.TC_ConnectWithUs_006 -->
-      <class name="com.qa.testscript.TC_HotelPackage_004">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.testscript.TC_HotelPackage_004@223d2c72]" started-at="2021-09-13T09:21:41 IST" name="setUp" finished-at="2021-09-13T09:21:48 IST" duration-ms="7836" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://beta.spicejet.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="HotelPackageForm()[pri:0, instance:com.qa.testscript.TC_HotelPackage_004@223d2c72]" started-at="2021-09-13T09:21:48 IST" name="HotelPackageForm" finished-at="2021-09-13T09:22:24 IST" duration-ms="35650" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- HotelPackageForm -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testscript.TC_HotelPackage_004@223d2c72]" started-at="2021-09-13T09:22:24 IST" name="tearDown" finished-at="2021-09-13T09:22:24 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.testscript.TC_HotelPackage_004 -->
-      <class name="com.qa.testscript.TC_FlightStatus_003_01">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.testscript.TC_FlightStatus_003_01@36902638]" started-at="2021-09-13T09:21:02 IST" name="setUp" finished-at="2021-09-13T09:21:09 IST" duration-ms="7297" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://beta.spicejet.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="flight_Status()[pri:0, instance:com.qa.testscript.TC_FlightStatus_003_01@36902638]" started-at="2021-09-13T09:21:09 IST" name="flight_Status" finished-at="2021-09-13T09:21:40 IST" duration-ms="31348" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='International']"}
-  (Session info: chrome=93.0.4577.63)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-JL7II6BG', ip: '192.168.118.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\windows\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:56102}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: cf899ac254f907d05a3048e471a4f3c0
-*** Element info: {Using=xpath, value=//div[text()='International']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='International']"}
-  (Session info: chrome=93.0.4577.63)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-JL7II6BG', ip: '192.168.118.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\windows\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:56102}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: cf899ac254f907d05a3048e471a4f3c0
-*** Element info: {Using=xpath, value=//div[text()='International']}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
-at com.qa.testscript.TC_FlightStatus_003_01.flight_Status(TC_FlightStatus_003_01.java:37)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- flight_Status -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testscript.TC_FlightStatus_003_01@36902638]" started-at="2021-09-13T09:21:40 IST" name="tearDown" finished-at="2021-09-13T09:21:41 IST" duration-ms="231" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.testscript.TC_FlightStatus_003_01 -->
-      <class name="com.qa.testscript.TC_SignUp_001">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.testscript.TC_SignUp_001@16d04d3d]" started-at="2021-09-13T09:19:24 IST" name="setUp" finished-at="2021-09-13T09:19:46 IST" duration-ms="21169" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://beta.spicejet.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="Signupform()[pri:0, instance:com.qa.testscript.TC_SignUp_001@16d04d3d]" started-at="2021-09-13T09:19:46 IST" name="Signupform" finished-at="2021-09-13T09:20:13 IST" duration-ms="27820" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Signupform -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testscript.TC_SignUp_001@16d04d3d]" started-at="2021-09-13T09:20:14 IST" name="tearDown" finished-at="2021-09-13T09:20:14 IST" duration-ms="432" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.testscript.TC_SignUp_001 -->
-      <class name="com.qa.testscript.TC_FlightSearchAndFlightStatus_003">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.testscript.TC_FlightSearchAndFlightStatus_003@1d2adfbe]" started-at="2021-09-13T09:20:39 IST" name="setUp" finished-at="2021-09-13T09:20:49 IST" duration-ms="10743" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://beta.spicejet.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="FlightSearch()[pri:0, instance:com.qa.testscript.TC_FlightSearchAndFlightStatus_003@1d2adfbe]" started-at="2021-09-13T09:20:49 IST" name="FlightSearch" finished-at="2021-09-13T09:21:01 IST" duration-ms="12024" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <div class="css-1dbjc4n r-1awozwy r-z2wwpe r-1loqt21 r-18u37iz r-1777fci r-d9fdf6 r-1w50u8q r-ah5dr5 r-1otgn73" data-focusable="true" tabindex="0" style="width: 119px; background-image: linear-gradient(rgb(252, 182, 62), rgb(247, 148, 29));">...</div> is not clickable at point (1059, 453). Other element would receive the click: <div class="css-76zvg2 r-13awgt0 r-1b43r93 r-1p6iasa" dir="auto" style="color: inherit; font-family: inherit; padding-left: 5px;">...</div>
-  (Session info: chrome=93.0.4577.63)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-JL7II6BG', ip: '192.168.118.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\windows\TEMP\scoped_dir9...}, goog:chromeOptions: {debuggerAddress: localhost:52556}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 093020b4ab0b1bef9a75d952074025ee]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div class="css-1dbjc4n r-1awozwy r-z2wwpe r-1loqt21 r-18u37iz r-1777fci r-d9fdf6 r-1w50u8q r-ah5dr5 r-1otgn73" data-focusable="true" tabindex="0" style="width: 119px; background-image: linear-gradient(rgb(252, 182, 62), rgb(247, 148, 29));">...</div> is not clickable at point (1059, 453). Other element would receive the click: <div class="css-76zvg2 r-13awgt0 r-1b43r93 r-1p6iasa" dir="auto" style="color: inherit; font-family: inherit; padding-left: 5px;">...</div>
-  (Session info: chrome=93.0.4577.63)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-JL7II6BG', ip: '192.168.118.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\windows\TEMP\scoped_dir9...}, goog:chromeOptions: {debuggerAddress: localhost:52556}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 093020b4ab0b1bef9a75d952074025ee
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
-at com.qa.testscript.TC_FlightSearchAndFlightStatus_003.FlightSearch(TC_FlightSearchAndFlightStatus_003.java:64)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- FlightSearch -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testscript.TC_FlightSearchAndFlightStatus_003@1d2adfbe]" started-at="2021-09-13T09:21:01 IST" name="tearDown" finished-at="2021-09-13T09:21:02 IST" duration-ms="313" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.testscript.TC_FlightSearchAndFlightStatus_003 -->
-      <class name="com.qa.testscript.TC_StudentDiscount__005">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.testscript.TC_StudentDiscount__005@8f4ea7c]" started-at="2021-09-13T09:22:24 IST" name="setUp" finished-at="2021-09-13T09:22:32 IST" duration-ms="8125" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://beta.spicejet.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="clickAddon()[pri:1, instance:com.qa.testscript.TC_StudentDiscount__005@8f4ea7c]" started-at="2021-09-13T09:22:32 IST" name="clickAddon" finished-at="2021-09-13T09:23:07 IST" duration-ms="34743" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickAddon -->
-        <test-method signature="siteLinks()[pri:2, instance:com.qa.testscript.TC_StudentDiscount__005@8f4ea7c]" started-at="2021-09-13T09:23:07 IST" name="siteLinks" finished-at="2021-09-13T09:23:10 IST" duration-ms="3431" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- siteLinks -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testscript.TC_StudentDiscount__005@8f4ea7c]" started-at="2021-09-13T09:23:10 IST" name="tearDown" finished-at="2021-09-13T09:23:11 IST" duration-ms="241" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.testscript.TC_StudentDiscount__005 -->
     </test> <!-- TeamAutomationTest -->
   </suite> <!-- SpiceJetAutomation -->
 </testng-results>

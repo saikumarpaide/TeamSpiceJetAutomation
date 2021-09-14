@@ -68,7 +68,7 @@ public class TC_FlightSearchAndFlightStatus_003 extends TestBase{
 		
 	
         File source =  ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-        File destination = new File(System.getProperty("user.dir")+"\\SpiceJetAutomationScreenshots\\"+DateStamp+".png");
+        File destination = new File(System.getProperty("user.dir")+"\\SpiceJetAutomation\\"+DateStamp+".png");
         FileUtils.copyFile(source, destination); 
         
         wb.close();
