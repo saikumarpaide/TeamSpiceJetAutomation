@@ -3,19 +3,12 @@ package com.qa.testscript;
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
-import java.io.File;
-import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
+import java.lang.reflect.Method;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
 import com.qa.pages.LoginAndSignupPage;
+import com.qa.utility.ExtentTestManager;
 
 public class TC_SignUp_001 extends TestBase {
 	
@@ -32,7 +25,8 @@ public class TC_SignUp_001 extends TestBase {
 
 
 	@Test
-	public void Signupform() throws InterruptedException, IOException {
+	public void Signupform(Method method) throws Exception {
+		exTest =ExtentTestManager.startTest(method.getName(),"Signupform");
 		
 		//driver.manage().window().fullscreen();
 		//driver.navigate().refresh();
@@ -88,16 +82,9 @@ public class TC_SignUp_001 extends TestBase {
 		//loginandSignupPage.getCheckboxTC().click();
 		loginandSignupPage.getSignupBtn().click();
 		
-		
-		madeScreenShots();
+		captureScreenshot(driver, method.getName());
 	}
-	public void madeScreenShots() throws IOException {
-		String DateStamp = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss").format(new Date());
-		 File source =  ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-	     File destination = new File(System.getProperty("user.dir")+"\\SpiceJetAutomation\\"+DateStamp+".png");
-	     FileUtils.copyFile(source, destination);
-	     
-		}
+	
 
 	
 }

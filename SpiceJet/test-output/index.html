@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-SpiceJetAutomation" class="navigator-link">
-              <span class="suite-name border-passed">SpiceJetAutomation</span>
+              <span class="suite-name border-failed">SpiceJetAutomation</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-SpiceJetAutomation" class="navigator-link ">
-                    <span>D:\sandeep\LocalRepo\TeamSpiceJetAutomation\SpiceJet\testng.xml</span>
+                    <span>D:\sandeep\LocalRepo\TeamSpiceJetAutomation\SpiceJet\src\test\java\com\qa\utility\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-SpiceJetAutomation" class="hide-methods failed suite-SpiceJetAutomation"> (hide)</a> <!-- hide-methods failed suite-SpiceJetAutomation -->
+                      <a href="#" panel-name="suite-SpiceJetAutomation" class="show-methods failed suite-SpiceJetAutomation"> (show)</a> <!-- show-methods failed suite-SpiceJetAutomation -->
+                    </span>
+                    <div class="method-list-content failed suite-SpiceJetAutomation">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SpiceJetAutomation" title="com.qa.testscript.TC_FlightSearch_001" class="method navigator-link" hash-for-method="FlightSearch(public void com.qa.testscript.TC_FlightSearch_001.FlightSearch(java.lang.reflect.Method) throws java...)">FlightSearch(public void com.qa.testscript.TC_FlightSearch_001.FlightSearch(java.lang.reflect.Method) throws java...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-SpiceJetAutomation -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +118,7 @@
                     <div class="method-list-content passed suite-SpiceJetAutomation">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SpiceJetAutomation" title="com.qa.testscript.TC_FooterLinks_007" class="method navigator-link" hash-for-method="checkFooterLinks">checkFooterLinks</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-SpiceJetAutomation" title="com.qa.testscript.TC_FlightStatus_001" class="method navigator-link" hash-for-method="flight_Status(public void com.qa.testscript.TC_FlightStatus_001.flight_Status(java.lang.reflect.Method) throws jav...)">flight_Status(public void com.qa.testscript.TC_FlightStatus_001.flight_Status(java.lang.reflect.Method) throws jav...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-SpiceJetAutomation -->
@@ -119,17 +133,39 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-SpiceJetAutomation" class="panel SpiceJetAutomation">
-          <div class="suite-SpiceJetAutomation-class-passed">
+          <div class="suite-SpiceJetAutomation-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.qa.testscript.TC_FooterLinks_007</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.qa.testscript.TC_FlightSearch_001</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="checkFooterLinks">
-                  </a> <!-- checkFooterLinks -->
-                  <span class="method-name">checkFooterLinks</span>
+                  <a name="FlightSearch(public void com.qa.testscript.TC_FlightSearch_001.FlightSearch(java.lang.reflect.Method) throws java...)">
+                  </a> <!-- FlightSearch(public void com.qa.testscript.TC_FlightSearch_001.FlightSearch(java.lang.reflect.Method) throws java...) -->
+                  <span class="method-name">FlightSearch</span>
+                  <span class="parameters">(public void com.qa.testscript.TC_FlightSearch_001.FlightSearch(java.lang.reflect.Method) throws java.lang.Exception)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Flight Booking for Domestic and International] but found [SpiceJet - Flight Booking for Domestic and International, Cheap Air Tickets]
+	at com.qa.testscript.TC_FlightSearch_001.FlightSearch(TC_FlightSearch_001.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SpiceJetAutomation-class-failed -->
+          <div class="suite-SpiceJetAutomation-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.testscript.TC_FlightStatus_001</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="flight_Status(public void com.qa.testscript.TC_FlightStatus_001.flight_Status(java.lang.reflect.Method) throws jav...)">
+                  </a> <!-- flight_Status(public void com.qa.testscript.TC_FlightStatus_001.flight_Status(java.lang.reflect.Method) throws jav...) -->
+                  <span class="method-name">flight_Status</span>
+                  <span class="parameters">(public void com.qa.testscript.TC_FlightStatus_001.flight_Status(java.lang.reflect.Method) throws java.lang.Exception)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -137,7 +173,7 @@
         </div> <!-- panel SpiceJetAutomation -->
         <div panel-name="test-xml-SpiceJetAutomation" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\sandeep\LocalRepo\TeamSpiceJetAutomation\SpiceJet\testng.xml</span>
+            <span class="header-content">D:\sandeep\LocalRepo\TeamSpiceJetAutomation\SpiceJet\src\test\java\com\qa\utility\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -148,11 +184,12 @@
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.qa.utility.Reporting&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;TeamAutomationTest&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.qa.testscript.TC_FooterLinks_007&quot;/&gt;
+      &lt;class name=&quot;com.qa.testscript.TC_FlightSearch_001&quot;/&gt;
+      &lt;class name=&quot;com.qa.testscript.TC_FlightStatus_001&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- TeamAutomationTest --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- SpiceJetAutomation --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -164,7 +201,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">TeamAutomationTest (1 class)</span>
+                <span class="test-name">Test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -190,16 +227,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'checkFooterLinks')
-data.setCell(0, 2, 'com.qa.testscript.TC_FooterLinks_007')
-data.setCell(0, 3, 77169);
+data.setCell(0, 1, 'FlightSearch')
+data.setCell(0, 2, 'com.qa.testscript.TC_FlightSearch_001')
+data.setCell(0, 3, 30912);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'flight_Status')
+data.setCell(1, 2, 'com.qa.testscript.TC_FlightStatus_001')
+data.setCell(1, 3, 14794);
 window.suiteTableData['SpiceJetAutomation']= { tableData: data, tableDiv: 'times-div-SpiceJetAutomation'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 45 seconds</span>
               <div id="times-div-SpiceJetAutomation">
               </div> <!-- times-div-SpiceJetAutomation -->
             </div> <!-- times-div -->
@@ -211,14 +252,9 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">checkFooterLinks</span>
+              <span class="reporter-method-name">FlightSearch(public void com.qa.testscript.TC_FlightSearch_001.FlightSearch(java.lang.reflect.Method) throws java...)</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">No of Tabs are ==>5</span>
-                <span class="reporter-method-output">SpiceJet - Flight Booking for Domestic and International, Cheap Air Tickets</span>
-                <span class="reporter-method-output">Site Map | SpiceJet Airlines</span>
-                <span class="reporter-method-output">GST Information</span>
-                <span class="reporter-method-output">Low Cost Air Travel, International Flight Tickets from India, Cheap Airline Tickets India | SpiceJet Airlines</span>
-                <span class="reporter-method-output">Privacy Policy | SpiceJet Airlines</span>
+                <span class="reporter-method-output">entered Into Excelsheet</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -236,18 +272,35 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.testscript.TC_FooterLinks_007</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.qa.testscript.TC_FlightSearch_001</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp(https://beta.spicejet.com/)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">checkFooterLinks</span>
-                <span class="method-start">56505 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">FlightSearch(public void com.qa.testscript.TC_FlightSearch_001.FlightSearch(java.lang.reflect.Method) throws java...)</span>
+                <span class="method-start">17493 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">134155 ms</span>
+                <span class="method-start">48758 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.testscript.TC_FlightStatus_001</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(https://beta.spicejet.com/)</span>
+                <span class="method-start">50354 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">flight_Status(public void com.qa.testscript.TC_FlightStatus_001.flight_Status(java.lang.reflect.Method) throws jav...)</span>
+                <span class="method-start">74741 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">89538 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

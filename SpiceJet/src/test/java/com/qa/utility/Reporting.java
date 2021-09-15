@@ -1,100 +1,77 @@
 package com.qa.utility;
 
+import java.util.Objects;
 import java.io.File;
-import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
+import org.testng.ITestListener;
 import org.testng.ITestResult;
-import org.testng.TestListenerAdapter;
-
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
-import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
-import com.aventstack.extentreports.reporter.configuration.Theme;
+import com.qa.testscript.TestBase;
 
-public class Reporting extends TestListenerAdapter {
-
-	public ExtentHtmlReporter extentHtmlReporter;
-	public ExtentReports extentReports;
-	public ExtentTest extentTest;
-
-	@Override
-	public void onStart(ITestContext testContext) {
-
-		String DateStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
-
-		String reportName = "Test-Report-" + DateStamp + ".html";
-		extentHtmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + "/Reports/" + reportName);
-
-		extentReports = new ExtentReports();
-
-		extentReports.attachReporter(extentHtmlReporter);
-		extentReports.setSystemInfo("HostName", "localhost");
-		extentReports.setSystemInfo("QA", "SAIKUMAR");
-		extentReports.setSystemInfo("OS", "Windows 10");
-
-		extentHtmlReporter.config().setDocumentTitle("SpiceJet Automation ");
-		extentHtmlReporter.config().setReportName("Functional Test Report");
-		extentHtmlReporter.config().setTheme(Theme.STANDARD);
-		extentHtmlReporter.config().setAutoCreateRelativePathMedia(true);
+public class Reporting extends TestBase implements ITestListener {
+	
+	private static String getTestMethodName(ITestResult res) {
+		
+		return res.getMethod().getConstructorOrMethod().getName();
+		
 	}
 
-	@Override
-	public void onFinish(ITestContext testContext) {
-		extentReports.flush();
-	}
 
+	@Override
+	public void onStart(ITestContext tcon) {
+		System.out.println("Iam in OnStart Method "+ tcon.getName());
+		tcon.setAttribute("WebDriver", this.driver);
+			}
+
+	@Override
+	public void onFinish(ITestContext tcon) {
+		System.out.println("Iam in OnFinish method" + tcon.getName());
+		ExtentManager.extentrep.flush();
+	}
+	
+	@Override
+	public void onTestStart(ITestResult tr) {
+		System.out.println("OnTestStart Method is Started "+ getTestMethodName(tr));
+
+	}
+	
+	
 	@Override
 	public void onTestSuccess(ITestResult tr) {
-		extentTest = extentReports.createTest(tr.getName());
-		extentTest.log(Status.PASS, MarkupHelper.createLabel(tr.getName(), ExtentColor.GREEN));
-		extentTest.log(Status.PASS, "Test is Passed");
-
-		String SSName = System.getProperty("user.dir") + "/Screenshots/" + tr.getName() + ".png";
-
-		File file = new File(SSName);
-		if (file.exists()) {
-			try {
-				extentTest.pass("Screenshot for the test Passed is : " + extentTest.addScreenCaptureFromPath(SSName));
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
-		}
+		System.out.println(getTestMethodName(tr)+" test is succeed");
+		
+		ExtentTestManager.getTest().log(Status.PASS, "Test Passed");
 
 	}
 
 	@Override
 	public void onTestFailure(ITestResult tr) {
-		extentTest = extentReports.createTest(tr.getName());
-		extentTest.log(Status.FAIL, MarkupHelper.createLabel(tr.getName(), ExtentColor.RED));
-		extentTest.log(Status.FAIL, "Test is Failed");
-		extentTest.log(Status.FAIL, tr.getThrowable());
+		System.out.println("Test is failed "+getTestMethodName(tr));
+		Object testclass= tr.getInstance();
+		WebDriver wd = ((TestBase)testclass).getDriver();
+		
+		String base64Screenshot ="data:image/png;base64,"+((TakesScreenshot)Objects.requireNonNull(wd)).getScreenshotAs(OutputType.BASE64);
+		
+		ExtentTestManager.getTest().log(Status.FAIL," Test Failed ", 
+				ExtentTestManager.getTest().addScreenCaptureFromBase64String(base64Screenshot).getModel().getMedia().get(0));
+		
 
-		String SSName = System.getProperty("user.dir") + "/Screenshots/" + tr.getName() + ".png";
-
-		File file = new File(SSName);
-		if (file.exists()) {
-			try {
-				extentTest.fail("Screenshot for the test failed is : " + extentTest.addScreenCaptureFromPath(SSName));
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
-		}
 	}
 
 	@Override
 	public void onTestSkipped(ITestResult tr) {
-		extentTest = extentReports.createTest(tr.getName());
-		extentTest.log(Status.SKIP, MarkupHelper.createLabel(tr.getName(), ExtentColor.AMBER));
-		extentTest.log(Status.SKIP, "Test is Skipped");
+		System.out.println("Iam in OnTestSkipped method "+getTestMethodName(tr));
+
+	ExtentTestManager.getTest().log(Status.SKIP, "Test Skipped");
 	}
+	
+	
 
 }

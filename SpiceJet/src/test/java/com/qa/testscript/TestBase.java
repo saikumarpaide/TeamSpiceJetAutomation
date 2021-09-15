@@ -1,7 +1,7 @@
 package com.qa.testscript;
 
 import java.io.File;
-import java.io.IOException;
+import java.lang.reflect.Method;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
@@ -20,21 +20,37 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
 import com.qa.pages.LoginAndSignupPage;
 import com.qa.pages.StudentPage;
+import com.qa.utility.ExtentTestManager;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
+
 public class TestBase {
+	
+	public ExtentTest exTest;
+	public ExtentReports exReports;
+	public int Success_tests= 0;
+	public int Failed_Tests=0;
+	public int Skip_Tests=0;
 
 	public WebDriver driver;
 	
 	LoginAndSignupPage loginandSignupPage;
 	StudentPage page = null;
-
+	
+	public WebDriver getDriver() {
+		return driver;
+	}
+	
+	
 	@BeforeClass
 	@Parameters("HomeUrl")
 	public void setUp(String url) {
+	
 		DesiredCapabilities caps = new DesiredCapabilities();
 		caps.setCapability("browser", "Chrome");
 		caps.setCapability("os", "Windows");
@@ -79,18 +95,20 @@ public class TestBase {
 			 driver.quit();
 		}
 	}
-
-	public void captureScreenShot(WebDriver driver, String tname) throws IOException {
-
-		TakesScreenshot ts = (TakesScreenshot) driver;
-		File source = ts.getScreenshotAs(OutputType.FILE);
-		File target = new File(System.getProperty("user.dir") + "/ScreenShots/" + tname + ".png");
-		FileUtils.copyFile(source, target);
-		System.out.println("done taking SS");
-
-	}
 	
-	 
- 
+	public  String timestamp() {
+		return new SimpleDateFormat("yyyy-MM-dd HH-mm-ss").format(new Date());
+	}
 
+
+    public void captureScreenshot(WebDriver driver ,String MethodName) throws Exception   {
+    	
+        File source = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+        String dest = System.getProperty("user.dir") +"\\Screenshots\\"+MethodName+"-"+timestamp()+".png";
+        File destination = new File(dest);
+        FileUtils.copyFile(source, destination); 
+      
+}
+
+	
 }

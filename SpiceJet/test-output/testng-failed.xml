@@ -5,15 +5,15 @@
   <listeners>
     <listener class-name="com.qa.utility.Reporting"/>
   </listeners>
-  <test thread-count="5" name="TeamAutomationTest(failed)">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.qa.testscript.TC_GiftCard_008">
+      <class name="com.qa.testscript.TC_FlightSearch_001">
         <methods>
-          <include name="ClickLinkOfGC"/>
+          <include name="FlightSearch" invocation-numbers="0"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.qa.testscript.TC_GiftCard_008 -->
+      </class> <!-- com.qa.testscript.TC_FlightSearch_001 -->
     </classes>
-  </test> <!-- TeamAutomationTest(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [SpiceJetAutomation] -->

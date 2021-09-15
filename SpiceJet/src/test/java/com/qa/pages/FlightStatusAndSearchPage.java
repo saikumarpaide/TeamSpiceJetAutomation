@@ -6,8 +6,8 @@ import org.openqa.selenium.support.FindBy;
 
 public class FlightStatusAndSearchPage {
 	WebDriver driver;
+	
 	public FlightStatusAndSearchPage(WebDriver driver) {
-		super();
 		this.driver=driver;
 	}
 	
@@ -59,5 +59,7 @@ public class FlightStatusAndSearchPage {
 
 	@FindBy(xpath = "//div[text()='Search Flights']/parent::*")
 	public WebElement Look_For_Status;
+	
+	
 }
 

@@ -1,31 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[No of Tabs are ==>5]]>
-    </line>
-    <line>
-      <![CDATA[SpiceJet - Flight Booking for Domestic and International, Cheap Air Tickets]]>
-    </line>
-    <line>
-      <![CDATA[Site Map | SpiceJet Airlines]]>
-    </line>
-    <line>
-      <![CDATA[GST Information]]>
-    </line>
-    <line>
-      <![CDATA[Low Cost Air Travel, International Flight Tickets from India, Cheap Airline Tickets India | SpiceJet Airlines]]>
-    </line>
-    <line>
-      <![CDATA[Privacy Policy | SpiceJet Airlines]]>
+      <![CDATA[entered Into Excelsheet]]>
     </line>
   </reporter-output>
-  <suite started-at="2021-09-14T18:05:40 IST" name="SpiceJetAutomation" finished-at="2021-09-14T18:07:57 IST" duration-ms="137045">
+  <suite started-at="2021-09-15T22:23:46 IST" name="SpiceJetAutomation" finished-at="2021-09-15T22:25:18 IST" duration-ms="91777">
     <groups>
     </groups>
-    <test started-at="2021-09-14T18:05:40 IST" name="TeamAutomationTest" finished-at="2021-09-14T18:07:57 IST" duration-ms="137045">
-      <class name="com.qa.testscript.TC_FooterLinks_007">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.testscript.TC_FooterLinks_007@272113c4]" started-at="2021-09-14T18:05:41 IST" name="setUp" finished-at="2021-09-14T18:06:37 IST" duration-ms="56482" status="PASS">
+    <test started-at="2021-09-15T22:23:46 IST" name="Test" finished-at="2021-09-15T22:25:18 IST" duration-ms="91777">
+      <class name="com.qa.testscript.TC_FlightStatus_001">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.testscript.TC_FlightStatus_001@52b1beb6]" started-at="2021-09-15T22:24:37 IST" name="setUp" finished-at="2021-09-15T22:25:01 IST" duration-ms="24386" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -36,33 +21,97 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="checkFooterLinks()[pri:0, instance:com.qa.testscript.TC_FooterLinks_007@272113c4]" started-at="2021-09-14T18:06:37 IST" name="checkFooterLinks" finished-at="2021-09-14T18:07:55 IST" duration-ms="77169" status="PASS">
+        <test-method signature="flight_Status(java.lang.reflect.Method)[pri:0, instance:com.qa.testscript.TC_FlightStatus_001@52b1beb6]" started-at="2021-09-15T22:25:01 IST" name="flight_Status" finished-at="2021-09-15T22:25:16 IST" duration-ms="14794" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.qa.testscript.TC_FlightStatus_001.flight_Status(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
-            <line>
-              <![CDATA[No of Tabs are ==>5]]>
-            </line>
-            <line>
-              <![CDATA[SpiceJet - Flight Booking for Domestic and International, Cheap Air Tickets]]>
-            </line>
-            <line>
-              <![CDATA[Site Map | SpiceJet Airlines]]>
-            </line>
-            <line>
-              <![CDATA[GST Information]]>
-            </line>
-            <line>
-              <![CDATA[Low Cost Air Travel, International Flight Tickets from India, Cheap Airline Tickets India | SpiceJet Airlines]]>
-            </line>
-            <line>
-              <![CDATA[Privacy Policy | SpiceJet Airlines]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- checkFooterLinks -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testscript.TC_FooterLinks_007@272113c4]" started-at="2021-09-14T18:07:55 IST" name="tearDown" finished-at="2021-09-14T18:07:57 IST" duration-ms="2026" status="PASS">
+        </test-method> <!-- flight_Status -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testscript.TC_FlightStatus_001@52b1beb6]" started-at="2021-09-15T22:25:16 IST" name="tearDown" finished-at="2021-09-15T22:25:18 IST" duration-ms="2157" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.testscript.TC_FooterLinks_007 -->
-    </test> <!-- TeamAutomationTest -->
+      </class> <!-- com.qa.testscript.TC_FlightStatus_001 -->
+      <class name="com.qa.testscript.TC_FlightSearch_001">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.testscript.TC_FlightSearch_001@6bd61f98]" started-at="2021-09-15T22:23:46 IST" name="setUp" finished-at="2021-09-15T22:24:04 IST" duration-ms="17455" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://beta.spicejet.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="FlightSearch(java.lang.reflect.Method)[pri:0, instance:com.qa.testscript.TC_FlightSearch_001@6bd61f98]" started-at="2021-09-15T22:24:04 IST" name="FlightSearch" finished-at="2021-09-15T22:24:35 IST" duration-ms="30912" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.qa.testscript.TC_FlightSearch_001.FlightSearch(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Flight Booking for Domestic and International] but found [SpiceJet - Flight Booking for Domestic and International, Cheap Air Tickets]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Flight Booking for Domestic and International] but found [SpiceJet - Flight Booking for Domestic and International, Cheap Air Tickets]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at com.qa.testscript.TC_FlightSearch_001.FlightSearch(TC_FlightSearch_001.java:78)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[entered Into Excelsheet]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- FlightSearch -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testscript.TC_FlightSearch_001@6bd61f98]" started-at="2021-09-15T22:24:35 IST" name="tearDown" finished-at="2021-09-15T22:24:37 IST" duration-ms="1590" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.testscript.TC_FlightSearch_001 -->
+    </test> <!-- Test -->
   </suite> <!-- SpiceJetAutomation -->
 </testng-results>
