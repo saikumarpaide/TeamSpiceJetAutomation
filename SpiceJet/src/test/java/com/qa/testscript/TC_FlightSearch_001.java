@@ -1,11 +1,8 @@
 package com.qa.testscript;
 
-import static org.testng.Assert.assertEquals;
-
 import java.lang.reflect.Method;
 import java.util.concurrent.TimeUnit;
 
-import org.apache.hc.core5.util.Asserts;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
@@ -39,7 +36,7 @@ public class TC_FlightSearch_001 extends TestBase {
 		fp.Round_Trip.click();
 		fp.From_city_DD.click();
 		
-		 String xlpath = System.getProperty("user.dir")+"\\src\\test\\java\\com\\qa\\testdata\\TC_FlightStatus_003.xlsx";	 
+		 String xlpath = System.getProperty("user.dir")+"\\src\\test\\java\\com\\qa\\testdata\\TC_FlightStatus_001.xlsx";	 
 		 System.out.println("Excel is located at :"+xlpath);		 
          String Sheetname = "Search_Flight";
          int No_ofRows = ed.getRowCount(xlpath, Sheetname);
@@ -72,19 +69,13 @@ public class TC_FlightSearch_001 extends TestBase {
 		fp.Student_checkbox.click();
 		Thread.sleep(3000);
 		fp.Std_Continue.click();
+		String Expected =driver.getTitle();
+		String Actual= "SpiceJet - Flight Booking for Domestic and International, Cheap Air Tickets";
+		Assert.assertEquals(Expected, Actual);
 		a.sendKeys(Keys.ARROW_DOWN).build().perform();
 		a.sendKeys(Keys.ARROW_DOWN).build().perform();
 		Thread.sleep(5000);	
-		 String Expected =driver.getTitle();
-		Assert.assertEquals(Expected, "SpiceJet - Flight Booking for Domestic and International, Cheap Air Tickets");
-		
-	
 		captureScreenshot(driver, method.getName());
-		
-//        File source =  ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-//        File destination = new File(System.getProperty("user.dir")+"\\SpiceJetAutomation\\"+DateStamp+".png");
-//        FileUtils.copyFile(source, destination); 
-        
 	}
 		
 }

@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.qa.pages.FlightStatusAndSearchPage;
@@ -25,7 +26,7 @@ public class TC_FlightStatus_001 extends TestBase {
 		exTest =ExtentTestManager.startTest(method.getName(), "flight_Status");
 		
 		fp=PageFactory.initElements(driver, FlightStatusAndSearchPage.class);
-		String xlpath = System.getProperty("user.dir")+"\\src\\test\\java\\com\\qa\\testdata\\TC_FlightStatus_003.xlsx";	 
+		String xlpath = System.getProperty("user.dir")+"\\src\\test\\java\\com\\qa\\testdata\\TC_FlightStatus_001.xlsx";	 
 		System.out.println("Excel is located at :"+xlpath);		 
         String Sheetname = "Search_Flight";
 		fp.F_Status_module.click();
@@ -38,8 +39,10 @@ public class TC_FlightStatus_001 extends TestBase {
 		driver.findElement(By.xpath("//div[text()='"+ed.getCellValue(xlpath, Sheetname,1,1)+"']")).click();
 		Thread.sleep(2000);
 		fp.Look_For_Status.click();
+		String Expected =driver.getTitle();
+		String Actual= "SpiceJet - Flight Booking for Domestic and International, Cheap Air Tickets";
+		Assert.assertEquals(Expected, Actual);
 		Thread.sleep(5000);
-		
 		captureScreenshot(driver, method.getName());
 	        
 	  	}
