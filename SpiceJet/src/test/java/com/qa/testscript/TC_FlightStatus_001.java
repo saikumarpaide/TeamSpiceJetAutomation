@@ -42,9 +42,7 @@ public class TC_FlightStatus_001 extends TestBase {
 		String Expected =driver.getTitle();
 		String Actual= "SpiceJet - Flight Booking for Domestic and International, Cheap Air Tickets";
 		Assert.assertEquals(Expected, Actual);
-		Thread.sleep(5000);
-		captureScreenshot(driver, method.getName());
-	        
-	  	}
-
+		Thread.sleep(5000); 
+		captureScreenshot(driver, method.getName()); 
+	  }
 }

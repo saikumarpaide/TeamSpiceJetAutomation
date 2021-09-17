@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.Reporter;
@@ -63,10 +64,10 @@ public class TC_FlightSearch_001 extends TestBase {
 		
 		a.moveToElement(fp.Search_Flight).click().build().perform();
 		if(driver.findElement(By.xpath("//div[text()='Mandatory Guidelines arriving into UAE']")).isDisplayed()) {
-			fp.I_Agree.click();
+			w.until(ExpectedConditions.elementToBeClickable(fp.I_Agree)).click();
 			Thread.sleep(3000);
 		}
-		fp.Student_checkbox.click();
+		w.until(ExpectedConditions.elementToBeClickable(fp.Student_checkbox)).click();
 		Thread.sleep(3000);
 		fp.Std_Continue.click();
 		String Expected =driver.getTitle();
